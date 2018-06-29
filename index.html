@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="app">
+        <p>{{a.b}}aaa</p>
+        <div>
+            <p>{{c}}</p>
+        </div>
+        <p>{{a}}</p>
+    </div>
+</body>
+<script src="./myMVVM.js"></script>
+<script>
+    let app = new MVVM({
+        el: "#app",
+        data: {
+        	a: {
+        		b: 123
+            },
+            c: 456,
+        },
+    })
+</script>
+</html>
